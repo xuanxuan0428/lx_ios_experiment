@@ -14,7 +14,7 @@
 		3F1BFDCB21C7894B007D4AA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F1BFDC921C7894B007D4AA7 /* LaunchScreen.storyboard */; };
 		3F1BFDDB21C78E3E007D4AA7 /* PersonsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1BFDDA21C78E3E007D4AA7 /* PersonsTableViewController.swift */; };
 		3F1BFDDD21C78E61007D4AA7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1BFDDC21C78E61007D4AA7 /* DetailViewController.swift */; };
-		3F1BFE0D21C795AA007D4AA7 /* shiyan12_2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F1BFE0B21C795AA007D4AA7 /* shiyan12_2.xcdatamodeld */; };
+		3F1BFEAC21C7CAA5007D4AA7 /* shiyan12_2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F1BFEAA21C7CAA5007D4AA7 /* shiyan12_2.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		3F1BFDCC21C7894B007D4AA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F1BFDDA21C78E3E007D4AA7 /* PersonsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsTableViewController.swift; sourceTree = "<group>"; };
 		3F1BFDDC21C78E61007D4AA7 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		3F1BFE0C21C795AA007D4AA7 /* task12_2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = task12_2.xcdatamodel; sourceTree = "<group>"; };
+		3F1BFEAB21C7CAA5007D4AA7 /* task12_2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = task12_2.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +66,7 @@
 				3F1BFDC721C7894B007D4AA7 /* Assets.xcassets */,
 				3F1BFDC921C7894B007D4AA7 /* LaunchScreen.storyboard */,
 				3F1BFDCC21C7894B007D4AA7 /* Info.plist */,
-				3F1BFE0B21C795AA007D4AA7 /* shiyan12_2.xcdatamodeld */,
+				3F1BFEAA21C7CAA5007D4AA7 /* shiyan12_2.xcdatamodeld */,
 				3F1BFDDA21C78E3E007D4AA7 /* PersonsTableViewController.swift */,
 				3F1BFDDC21C78E61007D4AA7 /* DetailViewController.swift */,
 			);
@@ -148,7 +148,7 @@
 				3F1BFDDD21C78E61007D4AA7 /* DetailViewController.swift in Sources */,
 				3F1BFDC021C7894A007D4AA7 /* ViewController.swift in Sources */,
 				3F1BFDBE21C7894A007D4AA7 /* AppDelegate.swift in Sources */,
-				3F1BFE0D21C795AA007D4AA7 /* shiyan12_2.xcdatamodeld in Sources */,
+				3F1BFEAC21C7CAA5007D4AA7 /* shiyan12_2.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,14 +348,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		3F1BFE0B21C795AA007D4AA7 /* shiyan12_2.xcdatamodeld */ = {
+		3F1BFEAA21C7CAA5007D4AA7 /* shiyan12_2.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				3F1BFE0C21C795AA007D4AA7 /* task12_2.xcdatamodel */,
+				3F1BFEAB21C7CAA5007D4AA7 /* task12_2.xcdatamodel */,
 			);
-			currentVersion = 3F1BFE0C21C795AA007D4AA7 /* task12_2.xcdatamodel */;
+			currentVersion = 3F1BFEAB21C7CAA5007D4AA7 /* task12_2.xcdatamodel */;
 			name = shiyan12_2.xcdatamodeld;
-			path = "../../../../ios-homework/作业12/task12-2/task12-2/shiyan12_2.xcdatamodeld";
+			path = "../../../../ios-homework 2/作业12/task12-2/task12-2/shiyan12_2.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
