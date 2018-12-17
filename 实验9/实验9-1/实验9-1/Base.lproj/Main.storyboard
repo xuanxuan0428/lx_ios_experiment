@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ADx-u8-0hf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="c1H-jQ-sdQ">
+            <objects>
+                <viewController id="ADx-u8-0hf" customClass="ViewController" customModule="Gesture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cfb-iY-CFc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECe-OC-4nq">
+                                <rect key="frame" x="24" y="617" width="30" height="30"/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="add:" destination="ADx-u8-0hf" eventType="touchUpInside" id="zww-SB-ggP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEw-W9-hmR">
+                                <rect key="frame" x="180" y="617" width="38" height="30"/>
+                                <state key="normal" title="Move"/>
+                                <connections>
+                                    <action selector="move:" destination="ADx-u8-0hf" eventType="touchUpInside" id="KDx-5b-jQW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SpL-nv-qXk">
+                                <rect key="frame" x="314" y="617" width="45" height="30"/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="deleteView:" destination="ADx-u8-0hf" eventType="touchUpInside" id="Nhs-CQ-ZwD"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7SX-vV-Ljb" customClass="CircleView" customModule="Gesture" customModuleProvider="target">
+                                <rect key="frame" x="60" y="59" width="255" height="234"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.79638046029999998" green="0.036333229389999999" blue="0.94903963800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SpL-nv-qXk" firstAttribute="trailing" secondItem="cfb-iY-CFc" secondAttribute="trailingMargin" id="IAQ-CT-82D"/>
+                            <constraint firstItem="ECe-OC-4nq" firstAttribute="leading" secondItem="TOu-OM-ePm" secondAttribute="leading" constant="24" id="NEp-qA-rRG"/>
+                            <constraint firstItem="qEw-W9-hmR" firstAttribute="baseline" secondItem="SpL-nv-qXk" secondAttribute="baseline" id="Ygf-Fs-N08"/>
+                            <constraint firstItem="ECe-OC-4nq" firstAttribute="baseline" secondItem="qEw-W9-hmR" secondAttribute="baseline" id="dXO-bs-bSi"/>
+                            <constraint firstItem="SpL-nv-qXk" firstAttribute="leading" secondItem="qEw-W9-hmR" secondAttribute="trailing" constant="96" id="ln1-xS-Eh3"/>
+                            <constraint firstAttribute="bottom" secondItem="ECe-OC-4nq" secondAttribute="bottom" constant="20" symbolic="YES" id="slU-T6-5xC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TOu-OM-ePm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hMt-ia-CZd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-388" y="97.601199400299862"/>
+        </scene>
+    </scenes>
+</document>
