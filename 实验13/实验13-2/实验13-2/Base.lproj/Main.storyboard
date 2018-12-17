@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="veq-Ab-NXw">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="1FG-fJ-pHv">
+            <objects>
+                <viewController id="oa6-qw-Qte" customClass="ViewController" customModule="实验13_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1d7-Tg-KNR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wdv-xT-QFM">
+                                <rect key="frame" x="16" y="141" width="343" height="506"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="GWg-8E-if8">
+                                <rect key="frame" x="16" y="103" width="312" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASW-81-xAE">
+                                <rect key="frame" x="329" y="102" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="Bb5-oM-lH0"/>
+                                </constraints>
+                                <state key="normal" title="Go"/>
+                                <connections>
+                                    <action selector="go:" destination="oa6-qw-Qte" eventType="touchUpInside" id="SwI-Km-Hy5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPd-nE-iZs">
+                                <rect key="frame" x="16" y="65" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="back:" destination="oa6-qw-Qte" eventType="touchUpInside" id="7UC-eN-S2b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8am-9V-wOd">
+                                <rect key="frame" x="84" y="65" width="56" height="30"/>
+                                <state key="normal" title="Forward"/>
+                                <connections>
+                                    <action selector="forward:" destination="oa6-qw-Qte" eventType="touchUpInside" id="Eg6-MN-bva"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDi-O8-yYP">
+                                <rect key="frame" x="174" y="65" width="47" height="30"/>
+                                <state key="normal" title="Reload"/>
+                                <connections>
+                                    <action selector="reload:" destination="oa6-qw-Qte" eventType="touchUpInside" id="fDw-92-9YN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBg-JT-ogb">
+                                <rect key="frame" x="291" y="65" width="37" height="30"/>
+                                <state key="normal" title="Local"/>
+                                <connections>
+                                    <action selector="local:" destination="oa6-qw-Qte" eventType="touchUpInside" id="Unh-eu-fBd"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mYf-Sn-pDP">
+                                <rect key="frame" x="16" y="655" width="343" height="2"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mBg-JT-ogb" firstAttribute="trailing" secondItem="GWg-8E-if8" secondAttribute="trailing" id="2D1-Le-yRC"/>
+                            <constraint firstItem="GWg-8E-if8" firstAttribute="top" secondItem="JPd-nE-iZs" secondAttribute="bottom" constant="8" symbolic="YES" id="2vy-on-fHc"/>
+                            <constraint firstItem="mYf-Sn-pDP" firstAttribute="top" secondItem="wdv-xT-QFM" secondAttribute="bottom" constant="8" symbolic="YES" id="32d-jz-QCJ"/>
+                            <constraint firstItem="wdv-xT-QFM" firstAttribute="top" secondItem="GWg-8E-if8" secondAttribute="bottom" constant="8" symbolic="YES" id="6BG-3d-R3h"/>
+                            <constraint firstItem="tDi-O8-yYP" firstAttribute="leading" secondItem="8am-9V-wOd" secondAttribute="trailing" constant="34" id="93D-7i-al8"/>
+                            <constraint firstItem="GWg-8E-if8" firstAttribute="baseline" secondItem="ASW-81-xAE" secondAttribute="baseline" id="DV6-zS-efR"/>
+                            <constraint firstItem="JPd-nE-iZs" firstAttribute="top" secondItem="633-9j-UpJ" secondAttribute="top" constant="1" id="Epl-C3-ZrY"/>
+                            <constraint firstItem="mBg-JT-ogb" firstAttribute="baseline" secondItem="tDi-O8-yYP" secondAttribute="baseline" id="GO0-69-cOR"/>
+                            <constraint firstItem="GWg-8E-if8" firstAttribute="leading" secondItem="wdv-xT-QFM" secondAttribute="leading" id="QaW-9m-0Gr"/>
+                            <constraint firstItem="ASW-81-xAE" firstAttribute="trailing" secondItem="wdv-xT-QFM" secondAttribute="trailing" id="REw-Qc-Vbu"/>
+                            <constraint firstItem="JPd-nE-iZs" firstAttribute="leading" secondItem="GWg-8E-if8" secondAttribute="leading" id="RXF-gM-7qo"/>
+                            <constraint firstAttribute="bottom" secondItem="wdv-xT-QFM" secondAttribute="bottom" constant="20" symbolic="YES" id="S5O-jm-DQa"/>
+                            <constraint firstItem="ASW-81-xAE" firstAttribute="trailing" secondItem="1d7-Tg-KNR" secondAttribute="trailingMargin" id="afZ-YH-A4V"/>
+                            <constraint firstItem="mYf-Sn-pDP" firstAttribute="leading" secondItem="wdv-xT-QFM" secondAttribute="leading" id="e7S-Pj-a5C"/>
+                            <constraint firstItem="JPd-nE-iZs" firstAttribute="baseline" secondItem="8am-9V-wOd" secondAttribute="baseline" id="fOs-BN-9gV"/>
+                            <constraint firstItem="JPd-nE-iZs" firstAttribute="leading" secondItem="1d7-Tg-KNR" secondAttribute="leadingMargin" id="lld-1n-mTK"/>
+                            <constraint firstItem="8am-9V-wOd" firstAttribute="leading" secondItem="JPd-nE-iZs" secondAttribute="trailing" constant="34" id="nGr-tb-Bhc"/>
+                            <constraint firstItem="mYf-Sn-pDP" firstAttribute="trailing" secondItem="wdv-xT-QFM" secondAttribute="trailing" id="tWD-An-U6p"/>
+                            <constraint firstItem="ASW-81-xAE" firstAttribute="leading" secondItem="GWg-8E-if8" secondAttribute="trailing" constant="1" id="y1P-XT-DGf"/>
+                            <constraint firstItem="8am-9V-wOd" firstAttribute="baseline" secondItem="tDi-O8-yYP" secondAttribute="baseline" id="zQe-l3-sek"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="633-9j-UpJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="drI-5A-Pkb"/>
+                    <connections>
+                        <outlet property="progressView" destination="mYf-Sn-pDP" id="Vam-N1-g9T"/>
+                        <outlet property="tfUrl" destination="GWg-8E-if8" id="bhs-TM-KRj"/>
+                        <outlet property="webView" destination="wdv-xT-QFM" id="Man-IB-1au"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QGY-m9-61n" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="439.19999999999999" y="-124.58770614692655"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3ZH-ZP-p81">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="veq-Ab-NXw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0XV-Ua-fyf">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="oa6-qw-Qte" kind="relationship" relationship="rootViewController" id="xhD-3p-BdA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rok-a6-LcA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-500" y="-124.58770614692655"/>
+        </scene>
+    </scenes>
+</document>
